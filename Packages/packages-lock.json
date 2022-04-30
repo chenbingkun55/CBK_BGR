@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "cbk.core": {
+      "version": "file:cbk.core",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.2d.animation": {
       "version": "5.0.4",
       "depth": 0,

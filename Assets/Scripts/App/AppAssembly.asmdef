@@ -1,0 +1,16 @@
+{
+    "name": "AppAssembly",
+    "rootNamespace": "",
+    "references": [
+        "GUID:56bb210eb1ee5cc40a289b955a9e9cc0"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

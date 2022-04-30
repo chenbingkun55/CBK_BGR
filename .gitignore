@@ -1,5 +1,5 @@
 /.vscode
-/Assembly-CSharp.csproj
+/*.csproj
 /Build
 /CBK_BGR.sln
 /Library
@@ -39,3 +39,4 @@
 /UnityEngine.TestRunner.csproj
 /UnityEngine.UI.csproj
 /UserSettings
+AppAssembly.csproj
