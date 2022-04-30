@@ -1,0 +1,8 @@
+
+namespace CBK
+{
+    class SaveSystem
+    {
+        
+    }
+}
