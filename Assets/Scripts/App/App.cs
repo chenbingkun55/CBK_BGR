@@ -21,6 +21,7 @@ namespace CBK.Product
         public bool Initialize()
         {
             data.Initialize();
+            save.Initialize();
 
             return true;
         }
@@ -28,9 +29,10 @@ namespace CBK.Product
         public void Destroy()
         {
             data.Destroy();
+            save.Destroy();
         }
 
         public Data.DataManager data = new Data.DataManager();
-        public SaveSystem save = new SaveSystem();
+        public Save.SaveManager save = new Save.SaveManager();
     }
 }

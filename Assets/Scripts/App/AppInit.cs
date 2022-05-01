@@ -10,6 +10,9 @@ namespace CBK.Product
         {
             // 初始化App
             m_app.Initialize();
+
+            // 加载数据
+            m_app.save.LoadSaveRecordData();
         }
 
         private void OnDestroy()

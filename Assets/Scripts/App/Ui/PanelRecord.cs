@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using CBK.Core;
@@ -31,7 +32,7 @@ namespace CBK.Product.Ui
         public void OnAddRecordClick()
         {
             var recordData = App.Instantiate.data[DataType.RecordData] as RecordData;
-            var record = new Record(true);
+            var record = new Record();
             
             record.dateTime = DateTime.Parse(m_inputDate.text);
             record.afterMealTime = int.Parse(m_inputAfterMealTime.text);
@@ -40,9 +41,10 @@ namespace CBK.Product.Ui
             record.medicineAmount = int.Parse(m_inputMedicineAmount.text);
             record.notice = m_inputNotice.text;
 
-            recordData.AddRecord(record);
+            recordData.recordData.Add(record);
 
-            FileManager.WriteFile("data.txt", record.ToString(), true);
+            // 保存到Disk
+            App.Instantiate.save.SaveDataToDisk();
         }
     }
 }
