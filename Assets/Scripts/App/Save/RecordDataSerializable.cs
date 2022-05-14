@@ -12,9 +12,15 @@ namespace CBK.Product.Save
         // 用餐时间
         public int afterMealTime;
         // 药品名称
-        public string medicineName;
+        public int medicineType;
         // 剂量
         public int medicineAmount;
+        // 运动类型
+        public int sportType;
+        // 运动量
+        public int sportAmount;
+        // 监测血糖值
+        public float monitorValue;
         // 备注
         public string notice; 
     }

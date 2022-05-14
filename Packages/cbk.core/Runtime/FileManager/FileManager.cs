@@ -15,7 +15,7 @@ namespace CBK.Core
         public static bool WriteFile(string filePath, string strData = default, bool bAppend = false)
         {
             var fullPath = Path.Combine(Config.kDataPath, filePath);
-            var dirPath = fullPath.Substring(0, fullPath.LastIndexOf('/'));
+            var dirPath = fullPath.Substring(0, fullPath.LastIndexOf(Path.DirectorySeparatorChar));
             
             // 不存在则创建
             if(!CheckExist(fullPath))
@@ -45,7 +45,7 @@ namespace CBK.Core
         public static async Task WriteFileAsync(string filePath, string strData = default, bool bAppend = false)
         {
             var fullPath = Path.Combine(Config.kDataPath, filePath);
-            var dirPath = fullPath.Substring(0, fullPath.LastIndexOf('/'));
+            var dirPath = fullPath.Substring(0, fullPath.LastIndexOf(Path.DirectorySeparatorChar));
             
             // 不存在则创建
             if(!CheckExist(fullPath))
@@ -73,9 +73,11 @@ namespace CBK.Core
         {
             outLines = new List<string>();
             var fullPath = Path.Combine(Config.kDataPath, filePath);
+            var dirPath = fullPath.Substring(0, fullPath.LastIndexOf(Path.DirectorySeparatorChar));
 
             if(!CheckExist(fullPath))
             {
+                Directory.CreateDirectory(dirPath);
                 File.WriteAllText(fullPath, "");
             }
             
@@ -101,9 +103,11 @@ namespace CBK.Core
         public static bool ReadFile(out string outString, string filePath)
         {
             var fullPath = Path.Combine(Config.kDataPath, filePath);
+            var dirPath = fullPath.Substring(0, fullPath.LastIndexOf(Path.DirectorySeparatorChar));
             
             if(!CheckExist(fullPath))
             {
+                Directory.CreateDirectory(dirPath);
                 File.WriteAllText(fullPath, "");
             }
             

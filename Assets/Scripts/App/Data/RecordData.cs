@@ -40,11 +40,18 @@ namespace CBK.Product.Data
         // 用餐类型
         public EatType eatType;
         // 用餐时间
-        public int afterMealTime;
+        public AfterMealTime afterMealTime;
         // 药品名称
-        public string medicineName;
+        public MedicineType medicineType;
         // 剂量
         public int medicineAmount;
+        // 运动类型
+        public SportType sportType;
+        // 运动量
+        public int sportAmount;
+
+        // 监测血糖值
+        public float monitorValue;
         // 备注
         public string notice;
     }
@@ -67,6 +74,23 @@ namespace CBK.Product.Data
         public void Destroy()
         {
 
+        }
+
+        /// <summary>
+        /// 按日期获取记录数据
+        /// </summary>
+        /// <param name="outList"></param>
+        /// <param name="begin"></param>
+        /// <param name="end"></param>
+        public void GetRecordData(out List<Record> outList, DateTime begin, DateTime end)
+        {
+            outList = new List<Record>();
+
+            foreach(var record in m_recordData)
+            {
+                if(record.dateTime >= begin && record.dateTime <= end)
+                    outList.Add(record);
+            }
         }
     }
 }

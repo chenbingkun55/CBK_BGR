@@ -1,0 +1,240 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: StringTable_en-US
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 6120389e3a52b884b82ec5cba1596a18, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 82362490880
+    m_Localized: Breakfast
+    m_Metadata:
+      m_Items: []
+  - m_Id: 218819977216
+    m_Localized: Lunch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 290207031296
+    m_Localized: Dinner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 335543263232
+    m_Localized: After {0} Meal Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1754744741888
+    m_Localized: Main
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1838391746560
+    m_Localized: Record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1915621466112
+    m_Localized: Data
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2550320324608
+    m_Localized: BGR Record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2895763202048
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3096733278208
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3621277130752
+    m_Localized: 'DateTime:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3929944350720
+    m_Localized: 'Eat Type: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4165433548800
+    m_Localized: 'AfterMealTime: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4419209912320
+    m_Localized: 'Medicine Name: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4652845228032
+    m_Localized: 'Medicine Amount: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4864942792704
+    m_Localized: 'Sport: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4984367210496
+    m_Localized: 'Sport Amount: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5173333188608
+    m_Localized: 'BGR Value: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5386055704576
+    m_Localized: 'Notice: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5494256164864
+    m_Localized: Add
+    m_Metadata:
+      m_Items: []
+  - m_Id: 288612070449152
+    m_Localized: 'Filter:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 289669039251456
+    m_Localized: Filter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 290082085920768
+    m_Localized: Begin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 290325766594560
+    m_Localized: End
+    m_Metadata:
+      m_Items: []
+  - m_Id: 299558780264448
+    m_Localized: Reset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2566267511758848
+    m_Localized: Hour 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2566399309373440
+    m_Localized: Hour 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2566499465158656
+    m_Localized: Hour 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2573855783641088
+    m_Localized: Walk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2573922112364544
+    m_Localized: Running
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2573928894554112
+    m_Localized: RideBike
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2573930891042816
+    m_Localized: Dumbbell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2577951714435072
+    m_Localized: Kilometer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600684565291008
+    m_Localized: Minute
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600739108020224
+    m_Localized: Null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2605889017077760
+    m_Localized: grain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2606563972866048
+    m_Localized: ml
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2606780281511936
+    m_Localized: Metformin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2606870949781504
+    m_Localized: Insulin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2608458053443584
+    m_Localized: 'Normal blood sugar: fasting (3.9-6.1) 1 hour after meal (6.7-9.4)
+      2 hours after meal (<= 7.8)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2616129821335552
+    m_Localized: DateTime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2616273644019712
+    m_Localized: EatType
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2616352501129216
+    m_Localized: AfterMealTime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2616524765388800
+    m_Localized: MedicineType
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2616677278670848
+    m_Localized: MedicineAmount
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2616852734795776
+    m_Localized: SportType
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2616987623612416
+    m_Localized: SportAmount
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2617193043845120
+    m_Localized: MonitorValue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2617367099072512
+    m_Localized: Notice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2632953778659328
+    m_Localized: Today
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2633269035130880
+    m_Localized: All
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2639506476883968
+    m_Localized: This Week
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2639619144278016
+    m_Localized: This Month
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2653471810510848
+    m_Localized: Clear Data
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

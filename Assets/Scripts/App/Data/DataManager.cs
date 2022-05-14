@@ -24,6 +24,10 @@ namespace CBK.Product.Data
 
         public void Destroy()
         {
+            // 销毁数据
+            foreach(var data in m_datas)
+                data.Value.Destroy();
+                
             m_datas.Clear();
         }
 

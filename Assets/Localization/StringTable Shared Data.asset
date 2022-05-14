@@ -1,0 +1,245 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: StringTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: StringTable
+  m_TableCollectionNameGuidString: 6120389e3a52b884b82ec5cba1596a18
+  m_Entries:
+  - m_Id: 82362490880
+    m_Key: Breakfast
+    m_Metadata:
+      m_Items: []
+  - m_Id: 218819977216
+    m_Key: Lunch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 290207031296
+    m_Key: Dinner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 335543263232
+    m_Key: After{0}MealTime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1754744741888
+    m_Key: Main
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1838391746560
+    m_Key: Record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1915621466112
+    m_Key: Data
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2550320324608
+    m_Key: BGR Record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2895763202048
+    m_Key: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3096733278208
+    m_Key: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3621277130752
+    m_Key: 'DateTime:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3929944350720
+    m_Key: 'Eat Type: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4165433548800
+    m_Key: 'AfterMealTime: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4419209912320
+    m_Key: 'Medicine Name: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4652845228032
+    m_Key: 'Medicine Amount: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4864942792704
+    m_Key: 'Sport: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4984367210496
+    m_Key: 'Sport Amount: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5173333188608
+    m_Key: 'BGR Value: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5386055704576
+    m_Key: 'Notice: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5494256164864
+    m_Key: Add
+    m_Metadata:
+      m_Items: []
+  - m_Id: 288612070449152
+    m_Key: 'Filter:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 289669039251456
+    m_Key: Filter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 290082085920768
+    m_Key: Begin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 290325766594560
+    m_Key: End
+    m_Metadata:
+      m_Items: []
+  - m_Id: 299558780264448
+    m_Key: Reset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2566267511758848
+    m_Key: Hour_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2566399309373440
+    m_Key: Hour_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2566499465158656
+    m_Key: Hour_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2573855783641088
+    m_Key: Walk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2573922112364544
+    m_Key: Running
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2573928894554112
+    m_Key: RideBike
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2573930891042816
+    m_Key: Dumbbell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2577951714435072
+    m_Key: Kilometer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600684565291008
+    m_Key: Minute
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600739108020224
+    m_Key: None
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2605889017077760
+    m_Key: grain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2606563972866048
+    m_Key: ml
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2606780281511936
+    m_Key: Metformin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2606870949781504
+    m_Key: Insulin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2608458053443584
+    m_Key: Normal blood sugar Tip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2616129821335552
+    m_Key: DateTime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2616273644019712
+    m_Key: EatType
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2616352501129216
+    m_Key: AfterMealTime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2616524765388800
+    m_Key: MedicineType
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2616677278670848
+    m_Key: MedicineAmount
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2616852734795776
+    m_Key: SportType
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2616987623612416
+    m_Key: SportAmount
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2617193043845120
+    m_Key: MonitorValue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2617367099072512
+    m_Key: Notice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2632953778659328
+    m_Key: Today
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2633269035130880
+    m_Key: All
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2639506476883968
+    m_Key: This Week
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2639619144278016
+    m_Key: This Month
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2653471810510848
+    m_Key: Clear Data
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1531799082433511450
+  references:
+    version: 2
+    RefIds:
+    - rid: 1531799082433511450
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1651905181518

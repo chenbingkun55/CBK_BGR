@@ -2,6 +2,7 @@ using System;
 using CBK.Core;
 using CBK.Product.Data;
 using CBK.Product.Config;
+using CBK.Product.Utils;
 using UnityEngine;
 
 namespace CBK.Product.Save
@@ -22,12 +23,20 @@ namespace CBK.Product.Save
 
         }
 
+        // 清空所有数据
+        public void ClearData()
+        {
+            m_saveData.ClearRecordData();
+
+            LoadSaveRecordData();
+        }
+
         /// <summary>
         /// 加载文件数据
         /// </summary>
         public void LoadSaveDataFromDisk()
         {
-            if(FileManager.ReadFile(out string json, AppConfig.kSaveFileName))
+            if(FileManager.ReadFile(out string json, AppConst.kSaveFileName))
             {
                 m_saveData.LoadFromJson(json);
             }
@@ -49,14 +58,20 @@ namespace CBK.Product.Save
             {
                 var record = new Record();
                 record.dateTime = DateTime.Parse(dataSer.strDateTime);
-                record.afterMealTime = dataSer.afterMealTime;
+                record.afterMealTime = (AfterMealTime)dataSer.afterMealTime;
                 record.eatType = (EatType)dataSer.eatType;
-                record.medicineName = dataSer.medicineName;
+                record.medicineType = (MedicineType)dataSer.medicineType;
                 record.medicineAmount = dataSer.medicineAmount;
+                record.sportType = (SportType)dataSer.sportType;
+                record.sportAmount = dataSer.sportAmount;
+                record.monitorValue = dataSer.monitorValue;
                 record.notice = dataSer.notice;
 
                 recordData.recordData.Add(record);
             }
+
+            // 按时间排序
+            recordData.recordData.Sort(TimeUtil.SortDateTimeLt);
         }
 
         /// <summary>
@@ -67,7 +82,7 @@ namespace CBK.Product.Save
             var recordData = App.Instantiate.data[DataType.RecordData] as RecordData;
 
             // Title
-            m_saveData.dataTitleSer.formatVersion = AppConfig.kRecordDataVersion;
+            m_saveData.dataTitleSer.formatVersion = AppConst.kRecordDataVersion;
 
             // Data
             m_saveData.listRecordDataSer.Clear();
@@ -76,18 +91,21 @@ namespace CBK.Product.Save
                 var recordDataSer = new RecordDataSerializable();
                 
                 recordDataSer.strDateTime = data.dateTime.ToString("s");
-                recordDataSer.afterMealTime = data.afterMealTime;
+                recordDataSer.afterMealTime = (int)data.afterMealTime;
                 recordDataSer.eatType = (int)data.eatType;
-                recordDataSer.medicineName = data.medicineName;
+                recordDataSer.medicineType = (int)data.medicineType;
                 recordDataSer.medicineAmount = data.medicineAmount;
+                recordDataSer.sportType = (int)data.sportType;
+                recordDataSer.sportAmount = data.sportAmount;
+                recordDataSer.monitorValue = data.monitorValue;
                 recordDataSer.notice = data.notice;
 
                 m_saveData.listRecordDataSer.Add(recordDataSer);
             }
 
-            if (FileManager.WriteFile(AppConfig.kSaveFileName, m_saveData.ToJson()))
+            if (FileManager.WriteFile(AppConst.kSaveFileName, m_saveData.ToJson()))
             {
-                Debug.Log("Save successful " + AppConfig.kSaveFileName);
+                Debug.Log("Save successful " + AppConst.kSaveFileName);
             }
         }
     }
