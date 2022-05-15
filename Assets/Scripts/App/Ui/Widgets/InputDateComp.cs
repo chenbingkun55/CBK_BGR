@@ -195,7 +195,7 @@ public class InputDateComp : MonoBehaviour
     /// <returns></returns>
     public DateTime GetDateTime()
     {
-        var strDateTime =  string.Format("{0}-{1}-{2} {3}:{4}", m_years[m_dropdownYear.value].ToString(), m_months[m_dropdownMonth.value].ToString(), m_days[m_dropdownDay.value].ToString(), m_hours[m_dropdownHour.value].ToString(), m_hours[m_dropdownHour.value].ToString());
+        var strDateTime =  string.Format("{0}-{1}-{2} {3}:{4}", m_years[m_dropdownYear.value].ToString(), m_months[m_dropdownMonth.value].ToString(), m_days[m_dropdownDay.value].ToString(), m_hours[m_dropdownHour.value].ToString(), m_minutes[m_dropdownMinute.value].ToString());
 
         return DateTime.Parse(strDateTime);
     }

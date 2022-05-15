@@ -136,7 +136,7 @@ namespace CBK.Product.Ui
                 if(item.gameObject.activeSelf)
                 {
                     var data = filterRecord[idx];
-                    item.dateTime.text = data.dateTime.ToString("s");
+                    item.dateTime.text = data.dateTime.ToString("yyyy-MM-dd HH:mm");
                     item.eatType.text = TranslateUtil.GetText(data.eatType.ToString());
                     item.afterMealTime.text = TranslateUtil.GetText(data.afterMealTime.ToString());
                     item.medicineType.text = TranslateUtil.GetText(data.medicineType.ToString());
