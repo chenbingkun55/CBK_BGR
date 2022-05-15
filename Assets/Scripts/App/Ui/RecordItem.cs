@@ -14,5 +14,8 @@ namespace CBK.Product.Ui
         [SerializeField] public Text sportAmount = default;
         [SerializeField] public Text monitorValue = default;
         [SerializeField] public Text notice = default;
+
+        // 记录Id
+        public string GUID = default;
     }
 }

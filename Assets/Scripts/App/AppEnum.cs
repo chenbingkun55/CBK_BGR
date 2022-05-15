@@ -7,6 +7,8 @@ namespace CBK.Product
         Breakfast, // 早餐
         Lunch, // 午餐
         Dinner, // 晚餐
+        Snack, // 加餐
+        Bedtime, // 睡前
         Max,
     }
 
@@ -14,6 +16,7 @@ namespace CBK.Product
     public enum AfterMealTime
     {
         None = 0,
+        BeforeMeal, // 餐前
         Hour_1, // 1小时
         Hour_2, // 2小时
         Hour_3, // 3小时

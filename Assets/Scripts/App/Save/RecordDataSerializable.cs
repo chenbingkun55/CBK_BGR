@@ -5,6 +5,8 @@ namespace CBK.Product.Save
     [Serializable]
     public class RecordDataSerializable
     {
+        // GUID
+        public string GUID;
         // 记录时间
         public string strDateTime;
         // 用餐类型

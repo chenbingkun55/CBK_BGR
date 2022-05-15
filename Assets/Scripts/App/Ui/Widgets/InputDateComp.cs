@@ -24,12 +24,6 @@ public class InputDateComp : MonoBehaviour
         InitUi();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -103,6 +97,14 @@ public class InputDateComp : MonoBehaviour
     }
 
     /// <summary>
+    /// 设置当前时间
+    /// </summary>
+    public void SetNow()
+    {
+         SetDateTime(DateTime.Now.ToString());
+    }
+
+    /// <summary>
     /// 设置今日开始
     /// </summary>
     public void SetTodayBegin()
@@ -142,7 +144,7 @@ public class InputDateComp : MonoBehaviour
         int week = (int)DateTime.Today.DayOfWeek;
         if (week == 0) week = 7; //周⽇
         var beginDate = DateTime.Today.AddDays(-(week - 1));
-        var endDate = beginDate.AddDays(6);
+        var endDate = beginDate.AddDays(7).AddSeconds(-1);
 
         SetDateTime(endDate.ToString());
     }

@@ -7,13 +7,11 @@ using CBK.Product.Utils;
 
 public class InputAfterMealTimeComp : MonoBehaviour
 {
-    private TMP_Dropdown m_dropdown = default;
+    [SerializeField] private TMP_Dropdown m_dropdown = default;
 
-    // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
-        m_dropdown = GetComponent<TMP_Dropdown>();
-
         InitUi();
     }
 
@@ -30,7 +28,7 @@ public class InputAfterMealTimeComp : MonoBehaviour
             }
 
             // 默认选择
-            m_dropdown.SetValueWithoutNotify((int)AfterMealTime.Hour_2);
+            // m_dropdown.SetValueWithoutNotify((int)AfterMealTime.BeforeMeal);
         }
     }
 
@@ -43,4 +41,12 @@ public class InputAfterMealTimeComp : MonoBehaviour
         return (AfterMealTime)m_dropdown.value;
     }
 
+    /// <summary>
+    /// 设置选中
+    /// </summary>
+    /// <param name="idx"></param>
+    public void SetSelected(int idx)
+    {
+         m_dropdown.value = idx;
+    }
 }

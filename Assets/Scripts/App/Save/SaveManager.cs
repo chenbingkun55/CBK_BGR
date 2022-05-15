@@ -57,6 +57,8 @@ namespace CBK.Product.Save
             foreach(var dataSer in m_saveData.listRecordDataSer)
             {
                 var record = new Record();
+
+                record.GUID = string.IsNullOrEmpty(dataSer.GUID) ? Guid.NewGuid().ToString() : dataSer.GUID;
                 record.dateTime = DateTime.Parse(dataSer.strDateTime);
                 record.afterMealTime = (AfterMealTime)dataSer.afterMealTime;
                 record.eatType = (EatType)dataSer.eatType;
@@ -67,11 +69,8 @@ namespace CBK.Product.Save
                 record.monitorValue = dataSer.monitorValue;
                 record.notice = dataSer.notice;
 
-                recordData.recordData.Add(record);
+                recordData.recordData.Add(record.GUID, record);
             }
-
-            // 按时间排序
-            recordData.recordData.Sort(TimeUtil.SortDateTimeLt);
         }
 
         /// <summary>
@@ -86,10 +85,12 @@ namespace CBK.Product.Save
 
             // Data
             m_saveData.listRecordDataSer.Clear();
-            foreach (var data in recordData.recordData)
+            foreach (var pr in recordData.recordData)
             {
+                var data = pr.Value;
                 var recordDataSer = new RecordDataSerializable();
                 
+                recordDataSer.GUID = data.GUID;
                 recordDataSer.strDateTime = data.dateTime.ToString("s");
                 recordDataSer.afterMealTime = (int)data.afterMealTime;
                 recordDataSer.eatType = (int)data.eatType;

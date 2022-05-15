@@ -10,15 +10,13 @@ using CBK.Product.Utils;
 public class InputMedicineComp : MonoBehaviour
 {
     [SerializeField] private Text m_textUnit = default;
-    private TMP_Dropdown m_dropdown = default;
+    [SerializeField] private TMP_Dropdown m_dropdown = default;
 
     private Dictionary<MedicineType, string> m_dicMedicineUnit = new Dictionary<MedicineType, string>();
 
-    // Start is called before the first frame update
-    private void Start()
-    {
-        m_dropdown = GetComponent<TMP_Dropdown>();
 
+    private void Awake()
+    {
         InitUi();
     }
 
@@ -42,12 +40,12 @@ public class InputMedicineComp : MonoBehaviour
     }
 
     /// <summary>
-    /// 选择药品类型
+    /// 设置选中
     /// </summary>
     /// <param name="idx"></param>
-    private void OnMedicineSelected(int eType)
+    public void SetSelected(int idx)
     {
-        m_textUnit.text = StringUtil.GetMedicineTypeUnit((MedicineType)eType);
+         m_dropdown.value = idx;
     }
 
     /// <summary>
@@ -57,5 +55,14 @@ public class InputMedicineComp : MonoBehaviour
     public MedicineType GetMedicineType()
     {
         return (MedicineType)m_dropdown.value;
+    }
+
+    /// <summary>
+    /// 选择药品类型
+    /// </summary>
+    /// <param name="idx"></param>
+    private void OnMedicineSelected(int eType)
+    {
+        m_textUnit.text = StringUtil.GetMedicineTypeUnit((MedicineType)eType);
     }
 }

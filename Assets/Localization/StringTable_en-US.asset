@@ -107,11 +107,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 290082085920768
-    m_Localized: Begin
+    m_Localized: 'Begin:'
     m_Metadata:
       m_Items: []
   - m_Id: 290325766594560
-    m_Localized: End
+    m_Localized: 'End:'
     m_Metadata:
       m_Items: []
   - m_Id: 299558780264448
@@ -233,6 +233,30 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2653471810510848
     m_Localized: Clear Data
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2824873963069440
+    m_Localized: mmol/L
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2826399762784256
+    m_Localized: Before Meal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2828853741002752
+    m_Localized: Bedtime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2833552661716992
+    m_Localized: Snack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2851810815156224
+    m_Localized: Alter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2948409184657408
+    m_Localized: Double click record to modify
     m_Metadata:
       m_Items: []
   references:

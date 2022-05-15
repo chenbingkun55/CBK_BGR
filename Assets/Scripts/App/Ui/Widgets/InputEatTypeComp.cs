@@ -8,13 +8,11 @@ using CBK.Product.Utils;
 [RequireComponent(typeof(TMP_Dropdown))]
 public class InputEatTypeComp : MonoBehaviour
 {
-    private TMP_Dropdown m_dropdown = default;
+    [SerializeField] private TMP_Dropdown m_dropdown = default;
+    [SerializeField] private InputAfterMealTimeComp m_inputAfterMealTime = default;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        m_dropdown = GetComponent<TMP_Dropdown>();
-
         InitUi();
     }
 
@@ -31,7 +29,7 @@ public class InputEatTypeComp : MonoBehaviour
             }
 
             // 默认选择
-            m_dropdown.SetValueWithoutNotify((int)EatType.Breakfast);
+            m_dropdown.onValueChanged.AddListener(OnSelectionChanged);
         }
     }
 
@@ -42,5 +40,28 @@ public class InputEatTypeComp : MonoBehaviour
     public EatType GetEatType()
     {
         return (EatType)m_dropdown.value;
+    }
+
+    /// <summary>
+    /// 设置选中
+    /// </summary>
+    /// <param name="idx"></param>
+    public void SetSelected(int idx)
+    {
+         m_dropdown.value = idx;
+    }
+
+    private void OnSelectionChanged(int index)
+    {
+        switch ((EatType)index)
+        {
+            case EatType.None:
+            case EatType.Bedtime:
+                m_inputAfterMealTime.SetSelected((int)AfterMealTime.None);
+                break;
+            default:
+                m_inputAfterMealTime.SetSelected((int)AfterMealTime.BeforeMeal);
+            break;
+        }
     }
 }

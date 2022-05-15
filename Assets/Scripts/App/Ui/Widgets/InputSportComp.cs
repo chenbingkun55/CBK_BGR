@@ -10,15 +10,12 @@ using CBK.Product.Utils;
 public class InputSportComp : MonoBehaviour
 {
     [SerializeField] private Text m_textUnit = default;
-    private TMP_Dropdown m_dropdown = default;
+    [SerializeField] private TMP_Dropdown m_dropdown = default;
 
     private Dictionary<SportType, string> m_dicSportUnit = new Dictionary<SportType, string>();
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        m_dropdown = GetComponent<TMP_Dropdown>();
-
         InitUi();
     }
 
@@ -42,12 +39,12 @@ public class InputSportComp : MonoBehaviour
     }
 
     /// <summary>
-    /// 选择运动类型
+    /// 设置选中
     /// </summary>
     /// <param name="idx"></param>
-    private void OnSportSelected(int eType)
+    public void SetSelected(int idx)
     {
-        m_textUnit.text = StringUtil.GetSportTypeUnit((SportType)eType);
+         m_dropdown.value = idx;
     }
 
     /// <summary>
@@ -57,5 +54,14 @@ public class InputSportComp : MonoBehaviour
     public SportType GetSportType()
     {
         return (SportType)m_dropdown.value;
+    }
+
+    /// <summary>
+    /// 选择运动类型
+    /// </summary>
+    /// <param name="idx"></param>
+    private void OnSportSelected(int eType)
+    {
+        m_textUnit.text = StringUtil.GetSportTypeUnit((SportType)eType);
     }
 }
