@@ -9,6 +9,9 @@ namespace CBK.Product
         Dinner, // 晚餐
         Snack, // 加餐
         Bedtime, // 睡前
+        WeeHours, // 凌晨
+        Limosis, // 空腹
+        Random, // 随机
         Max,
     }
 
@@ -20,6 +23,7 @@ namespace CBK.Product
         Hour_1, // 1小时
         Hour_2, // 2小时
         Hour_3, // 3小时
+        AfterMeal, // 餐后
         Max,
     }
 
