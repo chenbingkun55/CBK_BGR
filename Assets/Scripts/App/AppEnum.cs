@@ -35,6 +35,7 @@ namespace CBK.Product
         Running, // 跑步
         RideBike, // 骑单车
         Dumbbell, // 哑铃
+        Aerobics, // 健身操
         Max
     }
 

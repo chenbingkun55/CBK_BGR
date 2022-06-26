@@ -18,6 +18,7 @@ namespace CBK.Product.Utils
                     retStr = TranslateUtil.GetText("Kilometer");
                     break;
                 case SportType.Dumbbell:
+                case SportType.Aerobics:
                     retStr = TranslateUtil.GetText("Minute");
                     break;
                 default:

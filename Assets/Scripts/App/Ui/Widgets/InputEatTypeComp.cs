@@ -57,6 +57,8 @@ public class InputEatTypeComp : MonoBehaviour
         {
             case EatType.None:
             case EatType.Bedtime:
+            case EatType.Limosis:
+            case EatType.WeeHours:
                 m_inputAfterMealTime.SetSelected((int)AfterMealTime.None);
                 break;
             default:

@@ -25,10 +25,15 @@ namespace CBK.Product.Ui
         private float m_lastTime = default;
 
         // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
             m_itemView.gameObject.SetActive(false);
 
+            InitUi();
+        }
+
+        private void OnEnable()
+        {
             InitUi();
         }
 

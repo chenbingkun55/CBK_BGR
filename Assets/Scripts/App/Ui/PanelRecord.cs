@@ -112,6 +112,9 @@ namespace CBK.Product.Ui
 
             // 保存到Disk
             App.Instantiate.save.SaveDataToDisk();
+
+            // 重新刷新
+            RefreshUi(default);
         }
     }
 }
