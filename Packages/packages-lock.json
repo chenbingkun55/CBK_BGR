@@ -6,12 +6,6 @@
       "source": "embedded",
       "dependencies": {}
     },
-    "com.code-philosophy.hybridclr": {
-      "version": "file:com.code-philosophy.hybridclr",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
     "com.unity.2d.pixel-perfect": {
       "version": "5.0.1",
       "depth": 0,
