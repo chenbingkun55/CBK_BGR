@@ -1,0 +1,30 @@
+{
+    "name": "CBK.Framework",
+    "rootNamespace": "",
+    "references": [
+        "GUID:acbc10c5373d847e7835118099d417f4",
+        "GUID:1c9e25454b7224193bf4cc4799a6e2ee",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:a76cd114c47624e468311b75e9a86e17",
+        "GUID:27a2f9bad717293419a406242e5153ba",
+        "GUID:e16a851ff45a46b42918f227b09bf21e",
+        "GUID:6ea4fb6bcff39a74bb45db11dae37cd1",
+        "GUID:3de88c88fbbb8f944b9210d496af9762",
+        "GUID:27ddae29346fa4e0ab81d6d91effc453",
+        "GUID:af39456e6a3b4994f8bcbb4298527011",
+        "GUID:853ef8faf8a4268478503c4b87fdb23f",
+        "GUID:e2fd49fb5526ec54db10e663b2566dd9",
+        "GUID:f79984959cd614c0e9cc3d523895f71c",
+        "GUID:e34a5702dd353724aa315fb8011f08c3",
+        "GUID:5e90fee04fdf7164fa71eeef34c6a431"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

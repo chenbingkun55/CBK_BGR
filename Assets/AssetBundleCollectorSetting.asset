@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 185f6993d5150494d98da50e26cb1c25, type: 3}
+  m_Name: AssetBundleCollectorSetting
+  m_EditorClassIdentifier: 
+  ShowPackageView: 1
+  EnableAddressable: 1
+  UniqueBundleName: 1
+  ShowEditorAlias: 0
+  Packages:
+  - PackageName: MainAssets
+    PackageDesc: 
+    Groups:
+    - GroupName: Assembly
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/ProductAssets/Assembly
+        CollectorGUID: 1344fd844a7ba7d4c96d912367fb933e
+        CollectorType: 0
+        AddressRuleName: AddressByGroupAndFileName
+        PackRuleName: PackRawFile
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/ProductAssets/ScriptableObject/Entry/AssemblyManifest.asset
+        CollectorGUID: b59cd4391605d8147983c5731be466c3
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: Config
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/ProductAssets/Config
+        CollectorGUID: cb3ca87d284f2824f82825f3d6d21527
+        CollectorType: 0
+        AddressRuleName: AddressByGroupAndFileName
+        PackRuleName: PackRawFile
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: Prefab
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/ProductAssets/Prefab
+        CollectorGUID: 805a9ee5c0e147641821c8de2c68b01b
+        CollectorType: 0
+        AddressRuleName: AddressByGroupAndFileName
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectPrefab
+        AssetTags: 
+        UserData: 

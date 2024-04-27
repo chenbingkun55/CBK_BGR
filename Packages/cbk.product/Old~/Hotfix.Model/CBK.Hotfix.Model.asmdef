@@ -1,0 +1,17 @@
+{
+    "name": "CBK.Hotfix.Model",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f407dde647d987c469f144e3a0b9f7f7",
+        "GUID:9e97e42c28a41430880bee376c274c86"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

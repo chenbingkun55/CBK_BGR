@@ -1,0 +1,62 @@
+{
+    "FileVersion": "1.4.6",
+    "EnableAddressable": true,
+    "OutputNameStyle": 1,
+    "PackageName": "MainAssets",
+    "PackageVersion": "Simulate",
+    "AssetList": [
+        {
+            "Address": "AssemblyManifest",
+            "AssetPath": "Assets/ProductAssets/ScriptableObject/Entry/AssemblyManifest.asset",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "Prefab_IngameDebugConsole",
+            "AssetPath": "Assets/ProductAssets/Prefab/Debug/IngameDebugConsole.prefab",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependIDs": []
+        },
+        {
+            "Address": "Prefab_MainHotfix",
+            "AssetPath": "Assets/ProductAssets/Prefab/MainHotfix.prefab",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependIDs": []
+        }
+    ],
+    "BundleList": [
+        {
+            "BundleName": "mainassets_assets_productassets_scriptableobject_entry_assemblymanifest.bundle",
+            "FileHash": "00000000000000000000000000000000",
+            "FileCRC": "00000000",
+            "FileSize": 0,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": []
+        },
+        {
+            "BundleName": "mainassets_assets_productassets_prefab_debug_ingamedebugconsole.bundle",
+            "FileHash": "00000000000000000000000000000000",
+            "FileCRC": "00000000",
+            "FileSize": 0,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": []
+        },
+        {
+            "BundleName": "mainassets_assets_productassets_prefab_mainhotfix.bundle",
+            "FileHash": "00000000000000000000000000000000",
+            "FileCRC": "00000000",
+            "FileSize": 0,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": []
+        }
+    ]
+}

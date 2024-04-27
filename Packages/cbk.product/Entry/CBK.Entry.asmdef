@@ -1,0 +1,20 @@
+{
+    "name": "CBK.Entry",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5e90fee04fdf7164fa71eeef34c6a431",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:a76cd114c47624e468311b75e9a86e17",
+        "GUID:e96ad23ffde242449b0860755cd060b6",
+        "GUID:e34a5702dd353724aa315fb8011f08c3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
